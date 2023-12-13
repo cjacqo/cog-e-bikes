@@ -24,6 +24,15 @@
   color: $darkred;
 }
 
+@mixin heading-3 {
+  @include montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+  color: $whitegrey;
+}
+
 @mixin hero-body {
   @include poppins;
   font-weight: 500;
@@ -32,7 +41,7 @@
   color: $whitegrey;
 }
 
-@mixin section-heading-red {
+@mixin section-heading-red-shadow {
   @include poppins;
   font-weight: 600;
   font-size: 28px;
@@ -47,7 +56,7 @@
   background-clip: text;
 }
 
-@mixin section-heading-grey {
+@mixin section-heading-grey-shadow {
   @include poppins;
   font-weight: 600;
   font-size: 28px;
@@ -60,4 +69,41 @@
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+}
+
+@mixin heading-italic {
+  @include poppins;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  color: $whitegrey;
+}
+
+@mixin section-body {
+  @include montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: $whitegrey;
+}
+
+@mixin review-text {
+  @include poppins;
+  font-weight: 400;
+  color: $darkblue;
+}
+
+@mixin review-name-model {
+  @include review-text;
+  font-size: 16px;
+  line-height: 15.519px;
+}
+
+@mixin review-body {
+  @include review-text;
+  font-size: 14px;
+  line-height: 17.519px;
 }
