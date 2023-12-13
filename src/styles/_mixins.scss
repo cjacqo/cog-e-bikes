@@ -1,0 +1,63 @@
+@import './colors';
+
+/* TEXT */
+@mixin montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin heading-1 {
+  @include montserrat;
+  font-weight: 800;
+  font-size: 48px;
+  letter-spacing: -2.4px;
+  line-height: 43.5px;
+  color: $white;
+}
+
+@mixin heading-1-special {
+  @include heading-1;
+  font-style: italic;
+  color: $darkred;
+}
+
+@mixin hero-body {
+  @include poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: $whitegrey;
+}
+
+@mixin section-heading-red {
+  @include poppins;
+  font-weight: 600;
+  font-size: 28px;
+  font-style: italic;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+  background-color: $darkred;
+  color: transparent;
+  text-shadow: 0px 4px 2px $greyblueshadow;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+@mixin section-heading-grey {
+  @include poppins;
+  font-weight: 600;
+  font-size: 28px;
+  font-style: italic;
+  line-height: 33px;
+  text-transform: uppercase;
+  background-color: $whitegrey;
+  color: transparent;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
