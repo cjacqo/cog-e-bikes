@@ -107,3 +107,10 @@
   font-size: 14px;
   line-height: 17.519px;
 }
+
+/* CONTAINERS */
+@mixin center-left-column--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
